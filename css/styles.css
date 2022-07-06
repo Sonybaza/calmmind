@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  max-width: 1440px;
+  min-height: 896px;
+  margin: 0 auto;
+  background: #959595;
+}
+
+.headerbar {
+  max-width: 1440px;
+  min-height: 123px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Text Button */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+
+  background: #959595;
+}
+
+/* Logo */
+.logo {
+  max-width: 245px;
+  max-height: 63px;
+  left: 50px;
+  top: 30px;
+  padding-left: 50px;
+}
+
+.navigation {
+  max-width: 793px;
+  max-height: 123px;
+  display: flex;
+
+}
+
+.navigation__item {
+  margin-right: 20px;
+  max-height: 123px;
+  
+}
+
+.navigation__item:last-child {
+  margin-right: 0px;
+}
+
+.navigation__item:hover {
+  min-height: 123px;
+  background: #757575;
+  margin-top: auto;
+}
+
+.line {
+  max-width: 1440px;
+  height: 0px;
+  left: 0px;
+  top: 123px;
+  /* Border Color Overlay */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+.hero {
+  max-width: 1440px;
+  max-height: 477px;
+  left: 50px;
+  top: 223px;
+  
+  
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.heroLeftColum {
+  max-width: 655px;
+  min-height: 477px;
+  position: relative;
+  left: 50px;
+  top: 100px;
+
+}
+
+.heroRightColum {
+  max-width: 427px;
+  max-height: 427px;
+}
+
+.pWelcome {
+    /* WELCOME TO HOMCO */
+  position: relative;
+  max-width: 305px;
+  max-height: 26px;
+  left: 50px;
+  top: 1px;
+  /* H6 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  /* Primary */
+  color: #757575;
+
+}
+
+.pBuild {
+  /* BUILD YOUR ELEGAN DREAM HOME INTERIOR */
+  position: relative;
+  width: 555px;
+  height: 270px;
+  left: 50px;
+  top: 15px;
+  /* H1 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+
+}
+
+.pDescription {
+  position: relative;
+  width: 655px;
+  height: 52px;
+  left: 50px;
+  top: 15px;
+
+  /* Text Paragraph */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  /* White */
+  color: #FFFFFF;
+
+}
+
+.hero__button {
+  /* Button */
+  position: relative;
+  width: 198px;
+  height: 73px;
+  left: 50px;
+  top: 25px;
+  background: #757575;
+}
+
+.texthero__button {
+  /* Text Button */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+
