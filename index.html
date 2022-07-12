@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interier design</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmmind</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-
 <body>
-  <div class="wrapper">
-   <!-- шапка сайта - состоит из двух блоков [headerbar] и [hero] -->
-    <header>
-   <!-- блок [headerbar] состоит из 3-х блоков -->
-      <div class="headerbar">
-    
-      <!-- блок1 Logo -->
-        <div class="logo">
-          <img src="./images/Logo Homco 1.png" alt="logo">
-        </div>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="logo">
+                <img
+                    src="./images/logo.svg"
+                    alt="logo"
+                    class="logo__image"
+                >
+            </a>
+
+            <div class="nav-wrapper">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Relax your mind</a>
+                        </li>
+                        
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Blog</a>
+                        </li>
+                        
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">How To</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="free-trial-button">Free Trial</a>
+            </div>
+
+            <div class="nav-wrapper-mobile">
+                <div class="burger-menu">
+                    <div class="burger-menu__item"></div>
+                    <div class="burger-menu__item"></div>
+                    <div class="burger-menu__item"></div>
+                </div>
+            </div>
+        </header>
         
-      <!-- блок2 NavigationBar -->
-          <div>
-            <ul class="navigation">
-              <li class="navigation__item"><a href="#">Home</a></li>
-              <li class="navigation__item"><a href="#">About us</a></li>
-              <li class="navigation__item"><a href="#">Our services</a></li>
-             
-              <li class="navigation__item">
-                <a href="#">Our projects
-                  <img src="./images/menu_item.png" alt="menu">
-                </a>
-              </li>
-              
-              <li class="navigation__item"><a href="#">Portfolio</a></li>
-              
-              <li class="navigation__item">
-                <a href="#">Pages
-                  <img src="./images/menu_item.png" alt="menu">
-                </a>
-              </li>
-            
-            </ul>
-          
-          </div>
-        
-      <!-- блок3 OFFcanvasMenu -->
-          <div>
-            <img src="./images/Offcanvas Menu.png" alt="Offcanvas Menu">
-          </div>
-      </div>
-      
-      <!--линия разделяющая [headerbar] и [hero] -->
-      <div class="line"></div>
+        <main class="content">
+            <section class="hero">
+                <div class="hero__store">
+                    <p class="hero__title">
+                        Time to relax. <br />
+                        Make your mind more strong and 
+                        flexible!
+                    </p>
 
-      <div class="hero">
+                    <ul class="mobile-stores">
 
-        <div class="heroLeftColum">
-          
-            <p class="pWelcome">WELCOME TO HOMCO</p>
-            
-            <p class="pBuild">
-              BUILD YOUR 
-              ELEGAN DREAM 
-              HOME INTERIOR
-            </p>
-            
-            <p class="pDescription">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-              nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-            
-            <button class="hero__button" name="Our Project">
-              <p class="texthero__button">Our Project</p>
-            </button>
-            
+                        <li class="mobile-stores__item">
+                            <a href="#" class="mobile-stores__link">
+                                <img 
+                                    src="./images/google-play-logo.png" 
+                                    alt="google-store-logo"
+                                    class="mobile-store__image"
+                                >
+                            </a>
+                        </li>
 
-        </div>
-        
-        <div class="heroRightColum">
-          <img src="./images/Polygon 1.png" alt="">
-        <div>
-      
-      </div>
+                        <li class="mobile-stores__item">
+                            <a href="#" class="mobile-stores__link">
+                                <img 
+                                    src="./images/app-store-logo.png" 
+                                    alt="app-store-logo"
+                                    class="mobile-store__image"
+                                >
+                            </a>
+                        </li>
 
-    </header>
+                        
 
-  </div>
-  
+                    </ul>
+                </div>
+
+                <img 
+                    src="./images/ipad-application-preview.jpg" 
+                    alt="ipad-application-preview"
+                    class="hero__image"
+                >
+            </section>
+        </main>
+    </div>
 </body>
 </html>

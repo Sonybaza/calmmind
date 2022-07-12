@@ -1,203 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
 html, body {
-  width: 100%;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 39px;
+    
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow-x: hidden;
+
+    background-color: #FFBAA1;
+    
 }
 
-header {
-  max-width: 1440px;
-  min-height: 896px;
-  margin: 0 auto;
-  background: #959595;
+.header {
+    max-width: 990px;
+    margin: 0 auto;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.headerbar {
-  max-width: 1440px;
-  min-height: 123px;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  /* Text Button */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  /* White */
-  color: #FFFFFF;
-
-  background: #959595;
+.logo__image {
+    width: 37px;
+    height: 57px;
 }
 
-/* Logo */
-.logo {
-  max-width: 245px;
-  max-height: 63px;
-  left: 50px;
-  top: 30px;
-  padding-left: 50px;
+.nav-wrapper {
+    display: flex;
 }
 
-.navigation {
-  max-width: 793px;
-  max-height: 123px;
-  display: flex;
-
+.navigation__list {
+    display: flex;
 }
 
-.navigation__item {
-  margin-right: 20px;
-  max-height: 123px;
-  
+.navigation__item:nth-child(1) {
+    margin-right: 75px;
 }
 
-.navigation__item:last-child {
-  margin-right: 0px;
+.navigation__item:nth-child(2) {
+    margin-right: 64px;
 }
 
-.navigation__item:hover {
-  min-height: 123px;
-  background: #757575;
-  margin-top: auto;
+.navigation__item:nth-child(3) {
+    margin-right: 25px;
 }
 
-.line {
-  max-width: 1440px;
-  height: 0px;
-  left: 0px;
-  top: 123px;
-  /* Border Color Overlay */
-  border: 1px solid rgba(255, 255, 255, 0.25);
+.navigation__link {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
 
+.free-trial-button {
+    padding: 0 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+
+    border-radius: 4px;
+    background-color: #110ACD;
+}
+
+.nav-wrapper-mobile {
+    display: none;
+}
+
+.burger-menu {
+    width: 40px;
+}
+
+.burger-menu__item {
+    height: 3px;
+    margin-bottom: 10px;
+
+    border-radius: 4px;
+    background-color: #000000;
+}
+
+.burger-menu__item:last-child {
+    margin-bottom: 0;
 }
 
 .hero {
-  max-width: 1440px;
-  max-height: 477px;
-  left: 50px;
-  top: 223px;
-  
-  
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.heroLeftColum {
-  max-width: 655px;
-  min-height: 477px;
-  position: relative;
-  left: 50px;
-  top: 100px;
+.hero__title {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: right;
+
+    margin-bottom: 30px;
+    
+    color: #000000;
 
 }
 
-.heroRightColum {
-  max-width: 427px;
-  max-height: 427px;
+.mobile-stores {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.pWelcome {
-    /* WELCOME TO HOMCO */
-  position: relative;
-  max-width: 305px;
-  max-height: 26px;
-  left: 50px;
-  top: 1px;
-  /* H6 */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 17px;
-  line-height: 26px;
-  /* identical to box height */
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  /* Primary */
-  color: #757575;
-
+.hero__store {
+    /* max-width: 320px; */
+    flex-basis: 400px;
 }
-
-.pBuild {
-  /* BUILD YOUR ELEGAN DREAM HOME INTERIOR */
-  position: relative;
-  width: 555px;
-  height: 270px;
-  left: 50px;
-  top: 15px;
-  /* H1 */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 90px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  /* White */
-  color: #FFFFFF;
-
-}
-
-.pDescription {
-  position: relative;
-  width: 655px;
-  height: 52px;
-  left: 50px;
-  top: 15px;
-
-  /* Text Paragraph */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 26px;
-  /* White */
-  color: #FFFFFF;
-
-}
-
-.hero__button {
-  /* Button */
-  position: relative;
-  width: 198px;
-  height: 73px;
-  left: 50px;
-  top: 25px;
-  background: #757575;
-}
-
-.texthero__button {
-  /* Text Button */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  /* White */
-  color: #FFFFFF;
-}
-
