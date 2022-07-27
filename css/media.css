@@ -21,6 +21,10 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .people {
+        background-image: url('../images/peeps-tablet.png');
+    }
 }
 
 /* Medium */
@@ -49,10 +53,11 @@
     .mobile-stores {
         justify-content: center;
     }
-
 }
 
 /* Small */
 @media screen and (max-width: 576px) {
-    
+    .people {
+        background-image: url('../images/peeps-mobile.png');
+    }
 }

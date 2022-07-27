@@ -44,6 +44,7 @@ html, body {
 
     background-color: #FFBAA1;
     
+    padding-bottom: 350px;
 }
 
 .header {
@@ -182,6 +183,81 @@ html, body {
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
+}
+
+.guide {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 150px;
+    padding-top: 50px;
+
+
+}
+
+.guide__info {
+    max-width: 440px;
+}
+
+.guide__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 57px;
+
+    color: #000000;
+}
+
+.guide__text {
+    padding-top: 37px;
+    padding-bottom: 37px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 178.7%;
+    /* or 39px */    
+    color: #000000; 
+}
+
+.guide__btn {
+    display: flex;
+    gap: 30px;
+
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
+
+    max-width: 440px;
+    min-height: 87px;
+    background: #110ACD;
+    border-radius: 4px;
+}
+
+.guide__btn-text {
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.people {
+    min-height: 320px;
+    background-image: url('../images/Peeps-desktop.png');
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: contain;
+    background-position: center;
 }
 
 .swiper {
